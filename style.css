@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Montserrat&display=swap');
+
+body, html {
+    width: 100wh;
+    height: 100vh;
+    background-color: hsl(0, 0, 95%);
+}
+
+:focus {
+    outline: none !important;
+}
+
+body {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.game-table {
+    display: grid;
+    grid-template: 150px 150px 150px / 150px 150px 150px;
+    
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 600;
+    border: 2px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content: center;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.markers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.result {
+    display: flex;
+    height: 30px;
+}
+
+input {
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.replay {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 160px;
+    height: 80px;
+    border: none;
+    background-color: hsl(0, 0, 80%);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
